@@ -32,7 +32,7 @@
     padding: 32px;
     border-radius: 12px;
     box-shadow: 0 4px 12px lightgray;
-    max-width: 900px;
+    max-inline-size: 900px;
     }
 
     .photo {
@@ -43,8 +43,8 @@
     }
 
     .photo img {
-    width: 200px;
-    height: 200px;
+    inline-size: 200px;
+    block-size: 200px;
     object-fit: cover;
     border-radius: 50%;
     box-shadow: 0 0 12px gray;
@@ -52,7 +52,8 @@
     }
 
     .bio {
-    flex: 2;
+    flex: 1;
+
     }
 
     .bio h2 {
@@ -88,7 +89,7 @@
     margin-top: 32px;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 778px) {
     .profile {
         flex-direction: column;
         text-align: center;
@@ -99,3 +100,4 @@
         height: 150px;
     }
     }
+    
